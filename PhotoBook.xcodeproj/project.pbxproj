@@ -13,6 +13,13 @@
 		998CE82D293F11F100214DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998CE82B293F11F100214DC4 /* Main.storyboard */; };
 		998CE82F293F11F200214DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 998CE82E293F11F200214DC4 /* Assets.xcassets */; };
 		998CE832293F11F200214DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998CE830293F11F200214DC4 /* LaunchScreen.storyboard */; };
+		998CE83D293F31E400214DC4 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998CE83C293F31E400214DC4 /* PhotoPickerViewController.swift */; };
+		998CE8422940579100214DC4 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998CE8402940579100214DC4 /* PhotoCollectionViewCell.swift */; };
+		998CE8492941AD3000214DC4 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998CE8482941AD3000214DC4 /* PhotoCollectionViewCell.xib */; };
+		998CE84E2942F5DC00214DC4 /* PhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998CE84D2942F5DC00214DC4 /* PhotoAlbumViewController.swift */; };
+		998CE85C2942F95100214DC4 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998CE85B2942F95100214DC4 /* AlbumTableViewCell.swift */; };
+		998CE85F2942F95C00214DC4 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 998CE85E2942F95C00214DC4 /* AlbumTableViewCell.xib */; };
+		998CE866294B05BC00214DC4 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998CE865294B05BC00214DC4 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		998CE82E293F11F200214DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		998CE831293F11F200214DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		998CE833293F11F200214DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		998CE83C293F31E400214DC4 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		998CE8402940579100214DC4 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		998CE8482941AD3000214DC4 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		998CE84D2942F5DC00214DC4 /* PhotoAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViewController.swift; sourceTree = "<group>"; };
+		998CE85B2942F95100214DC4 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		998CE85E2942F95C00214DC4 /* AlbumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumTableViewCell.xib; sourceTree = "<group>"; };
+		998CE865294B05BC00214DC4 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,13 @@
 				998CE825293F11F100214DC4 /* AppDelegate.swift */,
 				998CE827293F11F100214DC4 /* SceneDelegate.swift */,
 				998CE829293F11F100214DC4 /* ViewController.swift */,
+				998CE83C293F31E400214DC4 /* PhotoPickerViewController.swift */,
+				998CE84D2942F5DC00214DC4 /* PhotoAlbumViewController.swift */,
+				998CE85B2942F95100214DC4 /* AlbumTableViewCell.swift */,
+				998CE85E2942F95C00214DC4 /* AlbumTableViewCell.xib */,
+				998CE8402940579100214DC4 /* PhotoCollectionViewCell.swift */,
+				998CE865294B05BC00214DC4 /* UIButton+Extension.swift */,
+				998CE8482941AD3000214DC4 /* PhotoCollectionViewCell.xib */,
 				998CE82B293F11F100214DC4 /* Main.storyboard */,
 				998CE82E293F11F200214DC4 /* Assets.xcassets */,
 				998CE830293F11F200214DC4 /* LaunchScreen.storyboard */,
@@ -125,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				998CE832293F11F200214DC4 /* LaunchScreen.storyboard in Resources */,
+				998CE8492941AD3000214DC4 /* PhotoCollectionViewCell.xib in Resources */,
 				998CE82F293F11F200214DC4 /* Assets.xcassets in Resources */,
+				998CE85F2942F95C00214DC4 /* AlbumTableViewCell.xib in Resources */,
 				998CE82D293F11F100214DC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				998CE8422940579100214DC4 /* PhotoCollectionViewCell.swift in Sources */,
 				998CE82A293F11F100214DC4 /* ViewController.swift in Sources */,
+				998CE83D293F31E400214DC4 /* PhotoPickerViewController.swift in Sources */,
 				998CE826293F11F100214DC4 /* AppDelegate.swift in Sources */,
+				998CE85C2942F95100214DC4 /* AlbumTableViewCell.swift in Sources */,
+				998CE866294B05BC00214DC4 /* UIButton+Extension.swift in Sources */,
 				998CE828293F11F100214DC4 /* SceneDelegate.swift in Sources */,
+				998CE84E2942F5DC00214DC4 /* PhotoAlbumViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

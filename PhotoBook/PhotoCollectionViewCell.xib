@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="y3h-VK-je9" customClass="PhotoCollectionViewCell" customModule="PhotoBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7i9-9g-lOZ">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qsb-N4-ZGp">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANG-z6-pEq">
+                        <rect key="frame" x="75" y="10" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="TIv-4V-bEa"/>
+                            <constraint firstAttribute="width" constant="15" id="q75-vv-Myh"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <state key="normal" image="pngfind.com-red-checkmark-png-6223310"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qsb-N4-ZGp" firstAttribute="top" secondItem="7i9-9g-lOZ" secondAttribute="top" id="7nU-vk-xKQ"/>
+                    <constraint firstAttribute="trailing" secondItem="qsb-N4-ZGp" secondAttribute="trailing" id="B47-No-Bwp"/>
+                    <constraint firstItem="ANG-z6-pEq" firstAttribute="top" secondItem="7i9-9g-lOZ" secondAttribute="top" constant="10" id="ISP-c5-taA"/>
+                    <constraint firstItem="qsb-N4-ZGp" firstAttribute="leading" secondItem="7i9-9g-lOZ" secondAttribute="leading" id="K4J-a5-ogh"/>
+                    <constraint firstAttribute="bottom" secondItem="qsb-N4-ZGp" secondAttribute="bottom" id="TTi-65-IRK"/>
+                    <constraint firstAttribute="trailing" secondItem="ANG-z6-pEq" secondAttribute="trailing" constant="10" id="t2x-qC-uCE"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="checkButton" destination="ANG-z6-pEq" id="eMI-u9-Mxw"/>
+                <outlet property="photoImageView" destination="qsb-N4-ZGp" id="RxK-tS-06E"/>
+            </connections>
+            <point key="canvasLocation" x="-713.04347826086962" y="6.6964285714285712"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pngfind.com-red-checkmark-png-6223310" width="359" height="359"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

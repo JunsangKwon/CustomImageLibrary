@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "pngfind.com-red-checkmark-png-6223312.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "pngfind.com-red-checkmark-png-6223310.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "pngfind.com-red-checkmark-png-6223311.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
