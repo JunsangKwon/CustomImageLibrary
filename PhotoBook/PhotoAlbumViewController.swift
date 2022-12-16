@@ -13,7 +13,7 @@ class PhotoAlbumViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    var delegate: setAssetFromAlbum?
+    var delegate: SetAssetFromAlbum?
     
     private let albumCellIdentifier = "AlbumCell"
     let imageManager = PHCachingImageManager()
@@ -54,10 +54,8 @@ extension PhotoAlbumViewController: UITableViewDelegate, UITableViewDataSource {
         cell.albumTitleLabel.text = assetCollection.localizedTitle
         let assetsFetchResult: PHFetchResult = PHAsset.fetchAssets(in: assetCollection, options: nil)
         cell.countLabel.text = "\(assetsFetchResult.count)"
-        if assetsFetchResult.count > 0 {
-            imageManager.requestImage(for: assetsFetchResult[0], targetSize: CGSize(width: 60, height: 60), contentMode: .aspectFill, options: nil) { image, _ in
-                cell.thumbnailImageView.image = image
-            }
+        imageManager.requestImage(for: assetsFetchResult[0], targetSize: CGSize(width: 60, height: 60), contentMode: .aspectFill, options: nil) { image, _ in
+            cell.thumbnailImageView.image = image
         }
         
         return cell

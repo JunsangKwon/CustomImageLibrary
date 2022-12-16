@@ -9,7 +9,7 @@ import UIKit
 
 import Photos
 
-protocol setAssetFromAlbum {
+protocol SetAssetFromAlbum {
     func setAsset(asset: PHFetchResult<PHAsset>)
     func setTitle(text: String)
 }
@@ -129,7 +129,7 @@ extension PhotoPickerViewController: UICollectionViewDelegate, UICollectionViewD
     }
 }
 
-extension PhotoPickerViewController: setAssetFromAlbum {
+extension PhotoPickerViewController: SetAssetFromAlbum {
     func setAsset(asset: PHFetchResult<PHAsset>) {
         self.asset = asset
         self.collectionView.reloadData()
